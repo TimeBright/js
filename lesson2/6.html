@@ -14,8 +14,45 @@
 // В зависимости от переданного значения операции выполнить одну из арифметических операций 
 // (использовать функции из пункта 5) и вернуть полученное значение (использовать switch).
 
+var arg1 = +prompt("Введите первое число:");
+var arg2 = +prompt("Введите второе число:");
+var operation = prompt("Введите знак арифметической операции: +, -, /,* ");
 
+function mathOperation(arg1, arg2, operation){
+switch (operation) {
+    case "+":
+        alert("Результат при сложении = " + sum(arg1,arg2));
+        break;
+        case "-":
+        alert("Результат при вычитании = " + minus(arg1,arg2));
+        break;
+        case "*":
+        alert("Результат при умножении = " + multiply(arg1,arg2));
+        break;
+        case "/":
+        alert("Результат при делении = " +  division(arg1,arg2));
+        break;
+default:
+    alert("Вы ввели не верный знак арифметической операции, допустимые варианты: + , - , / , * ");
+}
+}
+mathOperation(arg1, arg2, operation);
+function multiply(arg1,arg2){
+    return arg1*arg2;
+}
+function sum(arg1,arg2){
+    return arg1+arg2;
+}
+function minus(arg1,arg2){
+    return arg1-arg2;
+}
+function division(arg1,arg2){
+    return arg1/arg2;
+}
 
 </script>
+
+
+
 </body>
 </html>

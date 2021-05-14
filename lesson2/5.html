@@ -9,10 +9,37 @@
 <body>
     
 <script>
-// 5. Реализовать основные 4 
-// арифметические операции в виде функций с двумя параметрами. 
+// 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. 
 // Обязательно использовать оператор return.
 
+var a = +prompt("Введите число a");
+var b = +prompt("Введите число b");
+
+function sum(a,b){
+var res = a + b;
+alert("Сумма чисел " + a + " + " + b + " = " + res);
+    return res;
+}
+sum(a,b);
+function minus(a,b){
+    var min = a - b;
+alert("Разность чисел " + a + " - " + b + " = " + min);
+    return min;
+}
+minus(a,b);
+
+function division(a,b){
+    var division = a/b;
+alert("Деление чисел " + a + " / " + b + " = " + division.toFixed(2));
+    return division;
+}
+division(a,b);
+function multiply(a,b){
+    var multiply = a*b;
+alert("Умножение чисел " + a + " * " + b + " = " +  multiply);
+    return multiply;
+}
+multiply(a,b);
 </script>
 
 
